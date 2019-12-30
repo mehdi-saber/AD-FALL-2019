@@ -81,5 +81,5 @@ if __name__ == "__main__":
     regex = r"output_from_(\d*)_to_(\d*)\.txt"
     out_indexes = [re.findall(regex, name)[0] for name in os.listdir(outputs_path)]
     for out_index in out_indexes:
-        result = verify(out_index, True)
+        result = verify(out_index, False)
         print(file_name(out_index) + ': ' + str(result))
