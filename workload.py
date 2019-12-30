@@ -131,4 +131,4 @@ if __name__ == "__main__":
     # pashm = [20, 22, 25]
     # sangin = [21, 23, 24, 26, 27, 28, 29, 30, 34]
     with Pool(3) as pool:
-        list(pool.imap_unordered(MinimalJobshopSat, [21,23,24]))
+        list(pool.imap_unordered(MinimalJobshopSat, [20,22,25]))
